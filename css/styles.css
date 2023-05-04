@@ -123,21 +123,30 @@ color: rgba(20, 20, 20, 0.5);
         color: #fff;
         font-weight: 400;
         font-size: 12px;
-        line-height: calc(14/12);
-        letter-spacing: 0.04em;
+        line-height: 1.17;
     
     
         background-color: #1E2827;
         cursor: pointer;
-        border: none;
+        
     
         display: block;
         margin-left: auto;
         height: 42px;
-        min-width: 108px;
+        width: 108px;
         border-radius: 8px;
-        padding: 14px 28px;
+        text-align: center;
+        border: 1px solid #1E2827;
         
+    }
+
+    .buy-button:hover,
+    .buy-button:focus {
+        border: 1px solid #fff;
+    }
+
+    .whatches:nth-last-child(-n+4) {
+        display: none;
     }
 }
 /*---overlay---*/ /*----какой кубик?---*/
@@ -217,7 +226,12 @@ background: #F5F5F5;
 }
 
 
+.buy-button {
+    height: 50px;
+    width: 122px;
 
+text-align: center;
+}
 
 }
 @media screen and (min-width: 1440px) {
@@ -239,7 +253,9 @@ background: #F5F5F5;
         column-gap: 24px;
         margin-bottom: 80px;
     }
-
+.whatches:nth-last-child(-n+4) {
+    display: block;
+}
 
     .overlay img {
         padding: 25px 0;
@@ -252,7 +268,7 @@ background: #F5F5F5;
         position: relative;
         overflow: hidden;
         width: 276px;
-        height: 375px;
+        height: 376px;
 
         margin-bottom: 14px;
     }
